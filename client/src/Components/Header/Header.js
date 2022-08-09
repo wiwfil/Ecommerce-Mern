@@ -25,7 +25,7 @@ const Header = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.get("http://localhost:5000/api/auth/logout").then(() => {
+      await axios.get("https://mern-ecommerce-vagadrea.herokuapp.com/api/auth/logout").then(() => {
         window.sessionStorage.removeItem("user");
         window.location.reload();
         navigate("/");

@@ -6,7 +6,7 @@ export const createOrder = createAsyncThunk(
   async (orderItems) => {
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/order`,
+        `https://mern-ecommerce-vagadrea.herokuapp.com/api/order`,
         orderItems
       );
       return response.data;
@@ -20,7 +20,7 @@ export const createOrder = createAsyncThunk(
 export const getOrders = createAsyncThunk(`order/getOrders`, async (userID) => {
   try {
     const response = await axios.get(
-      `http://localhost:5000/api/order/find/${userID}`
+      `https://mern-ecommerce-vagadrea.herokuapp.com/api/order/find/${userID}`
     );
     return response.data;
   } catch (err) {

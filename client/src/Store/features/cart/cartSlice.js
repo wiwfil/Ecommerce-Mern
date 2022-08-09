@@ -5,7 +5,7 @@ export const getStripe = createAsyncThunk(
   `cart/getStripe`,
   async (cartTotalAmount) => {
     try {
-      const { data } = await axios.post("http://localhost:5000/api/payment/", {
+      const { data } = await axios.post("https://mern-ecommerce-vagadrea.herokuapp.com/api/payment/", {
         total: Math.round(cartTotalAmount),
       });
 

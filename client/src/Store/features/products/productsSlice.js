@@ -6,7 +6,7 @@ export const getProducts = createAsyncThunk(
   async (query) => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/products?${query.slice(1)}`
+        `https://mern-ecommerce-vagadrea.herokuapp.com/api/products?${query.slice(1)}`
       );
 
       return response.data;
@@ -22,7 +22,7 @@ export const getPopularProducts = createAsyncThunk(
   async (term) => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/products/popular?${term ? term : ""}`
+        `https://mern-ecommerce-vagadrea.herokuapp.com/api/products/popular?${term ? term : ""}`
       );
 
       return response.data;

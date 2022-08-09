@@ -9,7 +9,7 @@ export const getUser = createAsyncThunk(
   async (data, thunkAPI) => {
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/auth/login`,
+        `https://mern-ecommerce-vagadrea.herokuapp.com/api/auth/login`,
         {
           username: data.username,
           password: data.password,
@@ -28,7 +28,7 @@ export const getUser = createAsyncThunk(
 
 export const postUser = createAsyncThunk(`signup/postUser`, async (data) => {
   try {
-    const response = await axios.post(`http://localhost:5000/api/auth/signup`, {
+    const response = await axios.post(`https://mern-ecommerce-vagadrea.herokuapp.com/api/auth/signup`, {
       username: data.username,
       email: data.email,
       password: data.password,

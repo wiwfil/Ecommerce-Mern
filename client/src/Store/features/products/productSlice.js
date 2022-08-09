@@ -4,7 +4,7 @@ import axios from "axios";
 export const getProduct = createAsyncThunk(`product/getProduct`, async (id) => {
   try {
     const response = await axios.get(
-      `http://localhost:5000/api/products/find/${id}`
+      `https://mern-ecommerce-vagadrea.herokuapp.com/api/products/find/${id}`
     );
     return response.data;
   } catch (err) {

@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const getCategory = createAsyncThunk(`category/getProduct`, async () => {
   try {
-    const response = await axios.get(`http://localhost:5000/api/category`);
+    const response = await axios.get(`https://mern-ecommerce-vagadrea.herokuapp.com/api/category`);
     return response.data;
   } catch (err) {
     const message = err.message;
@@ -16,7 +16,7 @@ export const getPopularCategory = createAsyncThunk(
   async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/category/popular`
+        `https://mern-ecommerce-vagadrea.herokuapp.com/api/category/popular`
       );
       return response.data;
     } catch (err) {
