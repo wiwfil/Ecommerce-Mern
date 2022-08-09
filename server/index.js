@@ -38,6 +38,7 @@ app.use(
     },
   })
 );
+app.use("/",(req, res) => res.send("Welcome to Our API Service"))
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/products", productRoute);
