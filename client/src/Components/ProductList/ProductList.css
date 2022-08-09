@@ -1,0 +1,11 @@
+.productList {
+  width: 100%;
+  margin-bottom: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 330px));
+  grid-gap: 10px;
+  grid-auto-rows: minmax(390px, 1fr);
+  justify-content: center;
+  display: grid;
+  list-style: none;
+  align-items: center;
+}

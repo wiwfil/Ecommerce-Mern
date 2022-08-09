@@ -1,0 +1,23 @@
+.products__column {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.products {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.products__searchedTerm p {
+  color: black;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.products__searchedTerm {
+  margin-top: 10px;
+}

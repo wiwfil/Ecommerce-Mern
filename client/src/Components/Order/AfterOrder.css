@@ -1,0 +1,33 @@
+.afterorder__icon {
+  font-size: 100px !important;
+  color: green;
+}
+
+.afterorder {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: block;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.afterorder H2 {
+  color: green;
+}
+
+.afterorder button {
+  display: block;
+  border: 1px solid #e74c3c;
+  margin: 0 auto;
+  margin-top: 45px;
+  padding: 10px;
+  color: #fff;
+  background-color: #e74c3c;
+  text-decoration: none;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}

@@ -1,0 +1,108 @@
+.productCard {
+  background-color: #e74c3c;
+  min-width: 300px;
+  min-height: 360px;
+  max-height: 360px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  letter-spacing: 0.15rem;
+  font-family: "Arimo";
+  justify-content: space-between;
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.6), 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-transform: capitalize;
+}
+
+.productCard__image {
+  max-height: 216px;
+  max-width: 270px;
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 10px;
+  object-fit: scale-down;
+}
+
+.productCard__price {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.productCard__price p {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  margin: 0 auto;
+}
+.product-card-skeleton span {
+  display: block !important;
+}
+
+.product-card-skeleton-image {
+  width: 275px;
+  height: 215px;
+  margin-top: 10px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.product-card-skeleton {
+  background-color: #e74c3c;
+  min-width: 300px;
+  min-height: 360px;
+  max-height: 360px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px 5px 5px 5px;
+  justify-content: space-between;
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.6), 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.productCard__footer button:hover {
+  background-color: rgb(32, 32, 32);
+}
+
+.productCard__footer button {
+  padding: 5px 11px;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 45%;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: transparent;
+  font-weight: 400;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+}
+.product-card-skeleton-button {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.productCard__wrapper {
+  height: 216px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productCard__footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.productCard__title {
+  color: white;
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+}

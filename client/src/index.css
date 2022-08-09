@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Arimo", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  font-variant: normal;
+  padding: 0;
+  letter-spacing: 0.15rem;
+  justify-content: space-between;
+}
+html,
+body,
+#root,
+.App {
+  background-color: none;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #ecf0f1 !important;
+  overflow-y: auto;
+  overflow-x: auto;
+  min-width: 1328px;
+}
+.dark {
+  background-color: #29272c !important;
+  color: white !important;
+}
+.dark .bar {
+  background-color: white !important;
+}
+.dark button {
+  color: white !important;
+}
+.dark .header span {
+  color: white !important;
+}
+
+.dark h1 {
+  color: white !important;
+}
+
+.dark .checkout__form label {
+  color: white !important;
+}
+
+.dark .checkout__form button {
+  background-color: white !important;
+  color: black !important;
+  font-weight: bold !important;
+}
+
+.dark .filter {
+  color: white !important;
+}
+
+.dark .filter__line {
+  background-color: white !important;
+}
+.dark .filter button {
+  background-color: #ba001e !important;
+}
+.dark .products__searchedTerm p {
+  color: white !important;
+}
+.dark .btns button:disabled,
+.dark .btns button[disabled] {
+  background-color: #323131 !important;
+  color: #a09b9b !important;
+}
+
+.dark .cart__checkout button:disabled,
+.dark .cart__checkout button[disabled] {
+  background-color: #676464 !important;
+  color: #aaaaaa !important;
+}
+
+.dark .btns button:hover {
+  background-color: rgb(181, 181, 181) !important;
+}
+
+.dark .productCard button:hover {
+  background-color: #ba001e !important;
+}

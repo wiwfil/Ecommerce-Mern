@@ -1,0 +1,13 @@
+.carousel {
+  width: 95%;
+  min-width: 1200px;
+  height: auto;
+  margin: auto;
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.6), 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.banner > div > div > button {
+  border-radius: 50% !important;
+  height: 8px !important;
+  width: 8px !important;
+}

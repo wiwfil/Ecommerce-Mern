@@ -1,0 +1,69 @@
+.cart {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  font-family: "Arimo";
+  justify-content: space-between;
+  flex: 1 0 auto;
+}
+.cart__products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 10px;
+  margin: 0 auto;
+}
+.cart__main {
+  width: 70%;
+}
+
+.cart__checkout {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 20px;
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.6), 0 2px 5px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 #e74c3c;
+  height: 150px;
+  width: 20%;
+  background-color: #e74c3c;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.cart__checkout__title {
+  font-size: 30px;
+  color: white;
+}
+.cart h1 {
+  color: black;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+.cart__checkout button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+.cart__checkout button:hover {
+  background-color: rgb(32, 32, 32);
+}
+
+.cart__checkout button:disabled,
+.cart__checkout button[disabled] {
+  background-color: #676464;
+  color: #aaaaaa;
+}
