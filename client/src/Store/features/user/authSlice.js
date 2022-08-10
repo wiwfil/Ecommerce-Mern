@@ -36,7 +36,6 @@ export const postUser = createAsyncThunk(`signup/postUser`, async (data) => {
 
     return response.data;
   } catch (err) {
-    console.log(err);
     const message = err.message;
     return message;
   }

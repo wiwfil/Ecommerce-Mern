@@ -21,6 +21,7 @@ export const getPopularProducts = createAsyncThunk(
   "products/getPopularProducts",
   async (term) => {
     try {
+    
       const response = await axios.get(
         `https://mern-ecommerce-vagadrea.herokuapp.com/api/products/popular?${term ? term : ""}`
       );

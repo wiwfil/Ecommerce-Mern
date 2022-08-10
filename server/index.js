@@ -12,9 +12,11 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
 const bodyParser = require("body-parser");
+import sslRedirect from 'heroku-ssl-redirect';
 
 const app = express();
 app.use(cookieParser());
+app.use(sslRedirect());
 dotenv.config();
 
 mongoose

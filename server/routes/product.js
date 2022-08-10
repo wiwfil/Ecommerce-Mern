@@ -63,7 +63,6 @@ router.get("/find/:id", async (req, res) => {
 });
 
 router.get("/popular", async (req, res) => {
-  console.log("work")
   try {
     const productsByPopularity = await Product.find()
       .sort({ soldCount: -1 })
