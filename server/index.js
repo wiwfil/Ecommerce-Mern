@@ -16,16 +16,16 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
-app.get("*", function (req, res, next) {
+// app.get("*", function (req, res, next) {
 
-  if ("https" !== req.headers["x-forwarded-proto"]) {
-      res.redirect("https://" + req.hostname + req.url);
-  } else {
-      // Continue to other routes if we're not redirecting
-      next();
-  }
+//   if ("https" !== req.headers["x-forwarded-proto"]) {
+//       res.redirect("https://" + req.hostname + req.url);
+//   } else {
+//       Continue to other routes if we're not redirecting
+//       next();
+//   }
 
-});
+// });
 
 app.use(cookieParser());
 dotenv.config();
